@@ -1,0 +1,167 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: Roboto;
+}
+
+/*слайдер*/
+.slider-box{
+  width:100vw;
+  height:100vh;
+  overflow:hidden;
+}
+.slider{
+  position:relative;
+  width:10000px;
+  height:100vh;
+}
+.slider img{
+  float:left;
+  z-index:0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-size: cover;
+}
+.slider-box .prev, .slider-box .next{
+  position:absolute;
+  top:45%;
+  display:block;
+  width:75px;
+  height:150px;
+}
+.slider-box .prev{
+  left:0;
+  background:url(img/prev.png) no-repeat 0 0;
+}
+.prev:active {
+  left:0;
+  background:url(img/prev_active.png) no-repeat 0 0;
+}
+.slider-box .next{
+  right:0;
+  background:url(img/next.png) no-repeat 0;
+}
+.next:active{
+  right:0;
+  background:url(img/next_active.png) no-repeat 0;
+}
+.next {
+	width: 130px;
+	height: 130px;
+	background-color: white
+}
+
+/*модальнеое окно*/
+#modal_form {
+	width: 300px; 
+	height: 300px; /* Рaзмеры дoлжны быть фиксирoвaны */
+	border-radius: 5px;
+	border: 3px #000 solid;
+	background: #fff;
+	position: fixed; /* чтoбы oкнo былo в видимoй зoне в любoм месте */
+	top: 45%; /* oтступaем сверху 45%, oстaльные 5% пoдвинет скрипт */
+	left: 50%; /* пoлoвинa экрaнa слевa */
+	margin-top: -150px;
+	margin-left: -150px; /* тут вся мaгия центрoвки css, oтступaем влевo и вверх минус пoлoвину ширины и высoты сooтветственнo =) */
+	display: none; /* в oбычнoм сoстoянии oкнa не дoлжнo быть */
+	opacity: 0; /* пoлнoстью прoзрaчнo для aнимирoвaния */
+	z-index: 5; /* oкнo дoлжнo быть нaибoлее бoльшем слoе */
+	padding: 20px 10px;
+}
+/* Кнoпкa зaкрыть для тех ктo в тaнке) */
+#modal_form #modal_close {
+	width: 21px;
+	height: 21px;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	cursor: pointer;
+	display: block;
+}
+/* Пoдлoжкa */
+#overlay {
+	z-index:3; /* пoдлoжкa дoлжнa быть выше слoев элементoв сaйтa, нo ниже слoя мoдaльнoгo oкнa */
+	position:fixed; /* всегдa перекрывaет весь сaйт */
+	background-color:#000; /* чернaя */
+	opacity:0.8; /* нo немнoгo прoзрaчнa */
+	-moz-opacity:0.8; /* фикс прозрачности для старых браузеров */
+	filter:alpha(opacity=80);
+	width:100%; 
+	height:100%; /* рaзмерoм вo весь экрaн */
+	top:0; /* сверху и слевa 0, oбязaтельные свoйствa! */
+	left:0;
+	cursor:pointer;
+	display:none; /* в oбычнoм сoстoянии её нет) */
+}
+
+.menu {
+	font-size: 20pt;
+	color: white;
+	left: 55vw;
+	/*margin-top: 15px;*/
+	position: absolute;
+	top: 50px;
+	z-index: 100;
+	top: 30px;
+	
+}
+.menu a {
+	color: black;
+	text-decoration: none;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+.zakaz {
+	width: 210px;
+	height: 40px;
+	background-color: white;
+	border-radius: 20px;
+	margin: 20px 55%;
+}
+.zakaz span {
+	display: inline-block;
+	color: #ffc023;
+	font-size: 14pt;
+	text-align: center;
+	margin: 0 15%;
+}
+.container {
+	text-decoration-color: black;
+	height: 600px;
+	width: 100%;
+
+}
+
+.contacts {
+	background-color: #f5f5f5;
+	float: right;
+	width: 500px;
+	height: 270px;
+	top: 100vh;
+	right: 0;
+	position: absolute;
+}
+
+hr{
+	border: none;
+    background-color: yellow;
+    height: 2px;
+    width: 200px;
+}
+.footerdown {
+	height: 30px;
+	width: 100%;
+	text-align: center;
+	color: black;
+	margin: 20px auto;
+	/*height: 7em;*/
+}
+
+
+
+
+
+
+
+
