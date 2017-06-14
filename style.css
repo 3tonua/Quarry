@@ -179,7 +179,7 @@ hr{
 	margin: 20px auto;
 	/*height: 7em;*/
 }
-
+html { overflow-x: hidden; }
 
 
 
