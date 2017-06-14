@@ -39,8 +39,16 @@
   background:url(img/prev_active.png) no-repeat 0 0;
 }
 .slider-box .next{
+	opacity: .5;
   right:0;
   background:url(img/next.png) no-repeat 0;
+  transition: 0.3s;
+}
+.next:hover{
+	opacity: 1;
+  right:0;
+  background:url(img/next.png) no-repeat 0;
+  transition: 0.3s;
 }
 .next:active{
   right:0;
@@ -102,7 +110,7 @@
 	/*margin-top: 15px;*/
 	position: absolute;
 	top: 50px;
-	z-index: 100;
+	z-index: 2;
 	top: 30px;
 	
 }
@@ -129,15 +137,14 @@
 
 .container-box {
 	text-decoration-color: black;
-	height: 600px;
 	width: 100%;
 }
 .container-box hr{
 	left: 0;
-	width: 41%;
+	width: 42%;
 }
 .container {
-	margin: 5% 35% 5% 15%;
+	margin: 3% 35% 5% 15%;
 	text-align: justify;
 	line-height: 1.5;
 }
@@ -178,6 +185,9 @@ hr{
 	color: black;
 	margin: 20px auto;
 	/*height: 7em;*/
+}
+.container-box .container img {
+	margin-right: 10px
 }
 html { overflow-x: hidden; }
 
