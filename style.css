@@ -28,7 +28,7 @@
 }
 .slider-box .prev, .slider-box .next{
   position:absolute;
-  top:45%;
+  top:40%;
   display:block;
   width:75px;
   height:150px;
