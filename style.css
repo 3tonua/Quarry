@@ -92,7 +92,6 @@
 	font-size: 20pt;
 	color: white;
 	left: 50%;
-	/*margin-top: 15px;*/
 	position: absolute;
 	top: 20px;
 	z-index: 2;
@@ -190,7 +189,6 @@ hr{
 	margin: 20px auto;
   display: inline-block;
   position: relative;
-	/*height: 7em;*/
 }
 .map {
   display: inline-block;
@@ -211,7 +209,6 @@ html { overflow-x: hidden; }
   font-size: 20pt;
   color: white;
   left: 40%;
-  /*margin-top: 15px;*/
   position: absolute;
   z-index: 2;
   top: 30px;
@@ -280,21 +277,17 @@ html { overflow-x: hidden; }
         display: block;
         margin: 20px auto;
         position: relative;
-        /*margin: 20px 37%;*/
         width: 210px;
         height: 40px;
         background-color: white;
         border-radius: 20px;
         border: 1px solid grey;
-        /*margin: 20px 55%;*/
         cursor: pointer;
     }
     .zakaz span {
-        /*display: inline-block;*/
         color: #ffc023;
         font-size: 14pt;
         text-align: center;
-        /*margin: 0 15%;*/
     }
     .container-box {
         text-decoration-color: black;
@@ -334,7 +327,6 @@ html { overflow-x: hidden; }
     .contacts p:first-child {
         margin-bottom: 5px;
         margin-top: 10px;
-        /*margin-bottom: 30px;*/
         font-size: 24px;
     }
     hr{
